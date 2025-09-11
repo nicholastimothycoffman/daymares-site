@@ -44,7 +44,6 @@ footer a img {
   width: 30px;    /* small size */
   height: 30px;
   margin: 0 10px;
-  filter: saturate(1500%) hue-rotate(353deg) brightness(100%) contrast(100%);
   transition: transform 0.2s;
 }
 
