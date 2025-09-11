@@ -1,0 +1,54 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Top image */
+.top-image {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.top-image img {
+  max-width: 300px;   /* adjust as needed */
+  height: auto;
+}
+
+/* Center image */
+.center-image {
+  flex: 1;  /* takes up remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-image img {
+  max-width: 500px;   /* adjust as needed */
+  height: auto;
+}
+
+/* Footer icons */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+}
+
+footer a img {
+  width: 30px;    /* small size */
+  height: 30px;
+  margin: 0 10px;
+  filter: invert(21%) sepia(98%) saturate(6231%) hue-rotate(353deg) brightness(89%) contrast(112%);
+  transition: transform 0.2s;
+}
+
+footer a img:hover {
+  transform: scale(1.2);
+}
+
