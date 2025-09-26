@@ -33,21 +33,40 @@ body {
   height: auto;
 }
 
-/* Footer icons */
+/* Footer layout */
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;                  /* controls spacing between icons */
+  padding: 20px;
+  background: black;
 }
 
+/* Kill underlines + default blue link color */
+footer a {
+  text-decoration: none;     /* removes the underline (the blue dashes) */
+  color: inherit;            /* prevents blue link coloring */
+  line-height: 0;            /* avoids underline artifacts on whitespace */
+  display: inline-flex;      /* clean inline box around the icon */
+}
+
+/* Make the image the only thing inside the box */
 footer a img {
-  width: 30px;    /* small size */
+  display: block;            /* no inline descender gap */
+  width: 30px;
   height: 30px;
-  margin: 0 10px;
-  transition: transform 0.2s;
+  margin: 0;
+  transition: transform .2s;
 }
 
-footer a img:hover {
+footer a:hover img {
   transform: scale(1.2);
+}
+
+/* Keep keyboard accessibility without underlines */
+footer a:focus-visible {
+  outline: 2px solid #c11a1a;
+  outline-offset: 4px;
 }
 
