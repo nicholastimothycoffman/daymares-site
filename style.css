@@ -1,4 +1,4 @@
-/* Global styles */
+/* Global */
 body {
   margin: 0;
   padding: 0;
@@ -9,51 +9,49 @@ body {
   color: white;
 }
 
-/* Top image */
+/* Top */
 .top-image {
   text-align: center;
   padding-top: 20px;
 }
 
 .top-image img {
-  max-width: 300px;   /* adjust as needed */
+  max-width: 300px;
   height: auto;
 }
 
-/* Center image */
+/* Center */
 .center-image {
-  flex: 1;  /* takes up remaining space */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .center-image img {
-  max-width: 500px;   /* adjust as needed */
+  max-width: 500px;
   height: auto;
 }
 
-/* Footer layout */
+/* Footer */
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 14px;                  /* controls spacing between icons */
+  gap: 14px;                 
   padding: 20px;
   background: black;
 }
 
-/* Kill underlines + default blue link color */
 footer a {
-  text-decoration: none;     /* removes the underline (the blue dashes) */
-  color: inherit;            /* prevents blue link coloring */
-  line-height: 0;            /* avoids underline artifacts on whitespace */
-  display: inline-flex;      /* clean inline box around the icon */
+  text-decoration: none;
+  color: inherit;
+  line-height: 0;
+  display: inline-flex;
 }
 
-/* Make the image the only thing inside the box */
 footer a img {
-  display: block;            /* no inline descender gap */
+  display: block
   width: 30px;
   height: 30px;
   margin: 0;
@@ -64,7 +62,6 @@ footer a:hover img {
   transform: scale(1.2);
 }
 
-/* Keep keyboard accessibility without underlines */
 footer a:focus-visible {
   outline: 2px solid #c11a1a;
   outline-offset: 4px;
